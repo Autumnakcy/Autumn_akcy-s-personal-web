@@ -3,37 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>实用工具 - Autumn_akcy's blog</title>
+    <title>Autumn_akcy's blog</title>
     <link rel="icon" href="./icon/favicon.ico">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- 轮播背景 -->
     <div class="bg-layer bg1"></div>
     <div class="bg-layer bg2"></div>
     <div class="bg-layer bg3"></div>
 
+    <!-- 顶部导航 -->
     <header class="site-header">
         <a href="./index.html" class="logo rainbow">Autumn_akcy's blog</a>
+        <button class="nav-toggle" aria-label="打开菜单">☰</button>
         <nav class="nav">
-            <a href="./index.html"   class="nav-link">首页</a>
+            <a href="./index.html"   class="nav-link active">首页</a>
             <a href="./gallery.html" class="nav-link">精选图片</a>
-            <a href="./tools.html"   class="nav-link active">实用工具</a>
+            <a href="./tools.html"   class="nav-link">实用工具</a>
             <a href="./about.html"   class="nav-link">关于</a>
         </nav>
     </header>
 
     <div class="page">
-        <div class="rainbow" style="font-size: 20px;">实用工具&gt;&gt;&gt;</div><hr>
+        <!-- 作者区 -->
+        <div class="rainbow section-title">作者&gt;&gt;&gt;</div><hr>
 
-        <div class="glass" style="width: auto; max-width: 640px; margin: 24px auto;">
-            <div class="intro">
-                工具资源暂未公开，如需获取请通过 Bilibili 或 GitHub 联系我。
+        <section class="hero">
+            <div class="profile_pic">
+                <img src="./profile_pic/profile_pic.png" alt="profile_pic" width="100%">
             </div>
+            <div class="glass hero-card">
+                <div class="rainbow hero-name">Autumn_akcy</div>
+                <div class="intro">一个热爱开发开源项目的大学生</div>
+                <div class="tags">
+                    <span class="tag">前端</span>
+                    <span class="tag">开源</span>
+                    <span class="tag">HTML / CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="link_block">
+                <a href="https://space.bilibili.com/453898423" target="_blank" class="bili_link">Bilibili空间地址</a>
+                <a href="https://github.com/Autumnakcy/Autumn_akcy-s-personal-web.git" target="_blank" class="github_link">Github项目地址</a>
+            </div>
+        </section>
+
+        <!-- 快捷导航 -->
+        <div class="rainbow section-title">快速导航&gt;&gt;&gt;</div><hr>
+
+        <div class="quick-grid">
+            <a href="./gallery.html" class="quick-card">
+                <div class="quick-icon">🖼️</div>
+                <div class="quick-title">精选图片</div>
+                <div class="quick-desc">收藏的图片与动图</div>
+            </a>
+            <a href="./tools.html" class="quick-card">
+                <div class="quick-icon">🧰</div>
+                <div class="quick-title">实用工具</div>
+                <div class="quick-desc">自用的小工具合集</div>
+            </a>
+            <a href="./about.html" class="quick-card">
+                <div class="quick-icon">📄</div>
+                <div class="quick-title">关于本站</div>
+                <div class="quick-desc">这个站是怎么搭的</div>
+            </a>
         </div>
     </div>
 
     <footer>
         <div class="rainbow">© 2026 我的博客 | Autumn_akcy</div>
     </footer>
+
+    <script src="./js/nav.js" defer></script>
 </body>
 </html>
